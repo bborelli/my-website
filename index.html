@@ -13,68 +13,124 @@
       content="front-end developer, web developer, portfolio, Lisbon, Portugal"
     />
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/portfolio.css" />
+    <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
-    <div class="hero">
-      <p class="greeting">👋 Hello, I am</p>
+    <header class="hero text-center">
+      <p>👋 Hello, I am</p>
       <h1>Bruna Borelli</h1>
-      <h2 class="mb-5">Front-end Developer based in Portugal</h2>
-      <div>
-        <a href="about.html" class="btn btn-branding">About me</a>
-      </div>
-    </div>
-    <p class="text-center m-5">A selection of my best projects.</p>
-    <div class="container">
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img src="images/yoga.png" class="img-fluid" alt="Yoga Project" />
+      <h2 class="mb-4">Front-end Developer based in Portugal</h2>
+      <a href="about.html" class="btn btn-branding">About me</a>
+    </header>
+
+    <section class="container text-center my-5">
+      <h2 class="mb-4">A selection of my best projects</h2>
+    </section>
+
+    <section class="container">
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h2>Weather App</h2>
+          <p class="text-muted">
+            A real-time weather app that provides accurate forecasts using API
+            integration, featuring a sleek and user-friendly design.
+          </p>
+          <a
+            href="https://borellis-doing-weather.netlify.app/"
+            class="btn btn-branding-outline"
+            target="_blank"
+          >
+            Visit project
+          </a>
         </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Yoga Project</h2>
-            <p class="mb-5 text-muted">
-              A serene and intuitive yoga app that provides guided sessions,
-              enhancing mindfulness and relaxation through technology.
-            </p>
-            <a href="#" class="btn btn-branding-outline"> Learn more </a>
-          </div>
-        </div>
-      </div>
-      <div class="row mb-5">
-        <div class="col d-none d-lg-block">
-          <img src="images/yogurt.png" class="img-fluid" alt="Yogurt Project" />
-        </div>
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Yogurt Project</h2>
-            <p class="mb-5 text-muted">
-              A creative and visually appealing project that showcases dynamic
-              UI elements and seamless user interactions.
-            </p>
-            <a href="#" class="btn btn-branding-outline"> Learn more </a>
-          </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="styles/weather-app.png"
+            class="img-fluid"
+            alt="Weather App"
+          />
         </div>
       </div>
-      <div class="row mb-5">
-        <div class="col">
-          <div class="project-description">
-            <h2 class="mb-5">Weather App</h2>
-            <p class="mb-5 text-muted">
-              A real-time weather app that provides accurate forecasts using API
-              integration, featuring a sleek and user-friendly design.
-            </p>
-            <a href="#" class="btn btn-branding-outline"> Learn more </a>
-          </div>
+
+      <div class="row align-items-center mb-5 flex-lg-row-reverse">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h2>World Clock</h2>
+          <p class="text-muted">
+            A global timekeeping app that allows users to check the current time
+            in multiple cities worldwide with an intuitive interface.
+          </p>
+          <a
+            href="https://borellis-timing-the-world.netlify.app/"
+            class="btn btn-branding-outline"
+            target="_blank"
+          >
+            Visit project
+          </a>
         </div>
-        <div class="col d-none d-lg-block">
-          <img src="images/weather.png" class="img-fluid" alt="Weather App" />
+        <div class="col-lg-6 text-center">
+          <img
+            src="styles/world-clock.png"
+            class="img-fluid"
+            alt="World Clock"
+          />
         </div>
       </div>
-    </div>
+
+      <div class="row align-items-center mb-5">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h2>Critics at Large</h2>
+          <p class="text-muted">
+            A collaborative platform for movie and series reviews, allowing
+            users to share insights and rate content.
+          </p>
+          <a
+            href="https://critics-at-large.netlify.app/"
+            class="btn btn-branding-outline"
+            target="_blank"
+          >
+            Visit project
+          </a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="styles/podcast.png"
+            class="img-fluid"
+            alt="Critics at Large"
+          />
+        </div>
+      </div>
+
+      <div class="row align-items-center mb-5 flex-lg-row-reverse">
+        <div class="col-lg-6 text-center text-lg-start">
+          <h2>Cringe Cupid</h2>
+          <p class="text-muted">
+            A fun dating app concept that showcases humorous and unexpected
+            match suggestions.
+          </p>
+          <a
+            href="https://cringe-cupid.netlify.app/"
+            class="btn btn-branding-outline"
+            target="_blank"
+          >
+            Visit project
+          </a>
+        </div>
+        <div class="col-lg-6 text-center">
+          <img
+            src="styles/cringe-cupaid.png"
+            class="img-fluid"
+            alt="Cringe Cupid"
+          />
+        </div>
+      </div>
+    </section>
+
+    <footer class="text-center py-4 mt-5">
+      <p>&copy; 2025 Bruna Borelli | Front-end Developer</p>
+    </footer>
   </body>
 </html>
