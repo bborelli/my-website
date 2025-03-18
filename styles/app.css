@@ -48,32 +48,28 @@ h3 {
   border-radius: 8px;
   font-size: 18px;
   font-weight: bold;
+  transition: background 0.3s, color 0.3s;
 }
 
-.container {
-  max-width: 1000px;
-  margin: auto;
-  padding: 20px;
+.btn-branding-outline:hover {
+  background: var(--branding-color);
+  color: white;
 }
 
-img {
-  max-width: 100%;
-  height: auto;
-  display: block;
-  margin: auto;
+.project-img {
+  transition: transform 0.3s ease-in-out;
+}
+
+.project-img:hover {
+  transform: scale(1.05);
 }
 
 footer {
   background: var(--secondary-color);
-  padding: 20px;
+  padding: 30px 20px;
   text-align: center;
   font-size: 16px;
   color: #666;
-}
-
-.homepage-link {
-  font-size: 18px;
-  font-weight: bold;
 }
 
 @media (max-width: 900px) {
@@ -85,5 +81,8 @@ footer {
   }
   .hero {
     padding: 80px 20px;
+  }
+  .btn-branding-outline {
+    margin-bottom: 10px;
   }
 }

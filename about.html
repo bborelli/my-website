@@ -3,10 +3,19 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>About Bruna Borelli</title>
+    <title>Bruna Borelli | Front-end Developer</title>
     <meta
       name="description"
       content="Learn more about Bruna Borelli, a front-end developer based in Lisbon, Portugal."
+    />
+    <meta
+      name="keywords"
+      content="front-end developer, web developer, portfolio, Lisbon, Portugal"
+    />
+    <meta property="og:title" content="Bruna Borelli | Front-end Developer" />
+    <meta
+      property="og:description"
+      content="Front-end Developer based in Europe"
     />
     <link
       href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
@@ -19,23 +28,23 @@
     <header class="hero text-center">
       <p>👋 Hello, I am</p>
       <h1>Bruna Borelli</h1>
-      <h2 class="mb-4">🇧🇷🇵🇹 Front-end Developer based in Europe 🇪🇺</h2>
-      <a href="index.html" class="btn btn-branding">⬅ Back to homepage</a>
+      <h2 class="mb-4">🇧🇷🇵🇹 Front-end Developer based in Europe</h2>
+      <a href="index.html" class="btn btn-branding">Back to homepage</a>
     </header>
 
     <section class="container text-center my-5">
       <h2 class="mb-4">About Me</h2>
       <div
-        class="card shadow p-4 border-0"
+        class="d-flex flex-column flex-md-row align-items-center p-4 shadow border-0"
         style="background: var(--secondary-color)"
       >
         <img
           src="styles/bruna-profile.jpeg"
           alt="Bruna Borelli"
-          class="img-fluid rounded-circle mb-3"
-          style="max-width: 150px"
+          class="img-fluid rounded-circle mb-3 me-md-4"
+          style="max-width: 150px; float: left"
         />
-        <p class="text-muted">
+        <p class="text-muted text-start">
           With over 15 years of experience in journalism, marketing, and
           academic writing, I have built a strong foundation in research,
           content strategy, and storytelling. Now, I'm bringing this expertise
@@ -48,12 +57,13 @@
     <section id="contact" class="container text-center my-5">
       <h2>📮 Contact Me</h2>
       <div
-        class="card shadow p-4 border-0"
+        class="shadow p-4 border-0"
         style="background: var(--secondary-color)"
       >
         <a
           href="mailto:borelli.bruna@gmail.com"
           class="btn btn-branding-outline mt-3"
+          style="font-size: 16px; padding: 8px 16px"
           >Get in touch</a
         >
         <div class="mt-3">
@@ -90,16 +100,8 @@
       </div>
     </section>
 
-    <footer
-      class="text-center py-4 mt-5"
-      style="background: var(--secondary-color)"
-    >
+    <footer class="text-center py-4 mt-5">
       <p>&copy; 2025 Bruna Borelli | Front-end Developer</p>
-      <nav>
-        <a href="index.html" class="text-decoration-none me-3">Home</a>
-        <a href="about.html" class="text-decoration-none me-3">About</a>
-        <a href="#contact" class="text-decoration-none">Contact</a>
-      </nav>
     </footer>
   </body>
 </html>
