@@ -13,33 +13,93 @@
       rel="stylesheet"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="styles/portfolio.css" />
+    <link rel="stylesheet" href="styles/app.css" />
   </head>
   <body>
-    <a
-      href="index.html"
-      class="homepage-link text-primary text-center d-block my-3"
-      >⬅ Back to homepage</a
-    >
-    <div class="container text-center my-5">
-      <h1>About Me</h1>
-      <h3>Front-end Developer from Lisbon, Portugal</h3>
-      <p>
-        With over 15 years of experience in journalism, marketing, and academic
-        writing, I have built a strong foundation in research, content strategy,
-        and storytelling. Now, I'm bringing this expertise into the world of
-        programming, combining creativity with technical skills to build
-        impactful digital experiences.
-      </p>
-    </div>
-    <div id="contact" class="text-center my-5">
-      <h2>📮 Contact Me</h2>
-      <a
-        href="mailto:borelli.bruna@gmail.com"
-        class="email-link text-primary text-decoration-none fs-4"
+    <header class="hero text-center">
+      <p>👋 Hello, I am</p>
+      <h1>Bruna Borelli</h1>
+      <h2 class="mb-4">🇧🇷🇵🇹 Front-end Developer based in Europe 🇪🇺</h2>
+      <a href="index.html" class="btn btn-branding">⬅ Back to homepage</a>
+    </header>
+
+    <section class="container text-center my-5">
+      <h2 class="mb-4">About Me</h2>
+      <div
+        class="card shadow p-4 border-0"
+        style="background: var(--secondary-color)"
       >
-        borelli.bruna@gmail.com
-      </a>
-    </div>
+        <img
+          src="styles/bruna-profile.jpeg"
+          alt="Bruna Borelli"
+          class="img-fluid rounded-circle mb-3"
+          style="max-width: 150px"
+        />
+        <p class="text-muted">
+          With over 15 years of experience in journalism, marketing, and
+          academic writing, I have built a strong foundation in research,
+          content strategy, and storytelling. Now, I'm bringing this expertise
+          into the world of programming, combining creativity with technical
+          skills to build impactful digital experiences.
+        </p>
+      </div>
+    </section>
+
+    <section id="contact" class="container text-center my-5">
+      <h2>📮 Contact Me</h2>
+      <div
+        class="card shadow p-4 border-0"
+        style="background: var(--secondary-color)"
+      >
+        <a
+          href="mailto:borelli.bruna@gmail.com"
+          class="btn btn-branding-outline mt-3"
+          >Get in touch</a
+        >
+        <div class="mt-3">
+          <a
+            href="https://www.linkedin.com/in/brunaborelli"
+            target="_blank"
+            class="me-3"
+          >
+            <img
+              src="styles/linkedin-icon.png"
+              alt="LinkedIn"
+              style="width: 30px"
+            />
+          </a>
+          <a
+            href="https://www.instagram.com/brunaborelli"
+            target="_blank"
+            class="me-3"
+          >
+            <img
+              src="styles/instagram-icon.png"
+              alt="Instagram"
+              style="width: 30px"
+            />
+          </a>
+          <a href="https://github.com/brunaborelli" target="_blank">
+            <img
+              src="styles/github-icon.png"
+              alt="GitHub"
+              style="width: 30px"
+            />
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <footer
+      class="text-center py-4 mt-5"
+      style="background: var(--secondary-color)"
+    >
+      <p>&copy; 2025 Bruna Borelli | Front-end Developer</p>
+      <nav>
+        <a href="index.html" class="text-decoration-none me-3">Home</a>
+        <a href="about.html" class="text-decoration-none me-3">About</a>
+        <a href="#contact" class="text-decoration-none">Contact</a>
+      </nav>
+    </footer>
   </body>
 </html>
