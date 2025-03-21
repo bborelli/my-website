@@ -2,135 +2,208 @@
 <html lang="en">
   <head>
     <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Bruna Borelli | Front-end Developer</title>
     <meta
       name="description"
-      content="Learn more about Bruna Borelli, a front-end developer based in Lisbon, Portugal."
+      content="Bruna Borelli is a Front-end Developer based in Europe."
     />
     <meta
       name="keywords"
-      content="front-end developer, web developer, portfolio, Lisbon, Portugal"
+      content="front-end developer, web developer, portfolio, Europe"
     />
-    <meta property="og:title" content="Bruna Borelli | Front-end Developer" />
-    <meta
-      property="og:description"
-      content="Front-end Developer based in Europe"
-    />
+    <title>Bruna Borelli | Front-end Developer</title>
+
     <link
-      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css"
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css"
       rel="stylesheet"
+      integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl"
       crossorigin="anonymous"
     />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@500;700&display=swap"
+      rel="stylesheet"
+    />
     <link rel="stylesheet" href="styles/app.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-b5kHyXgcpbZJO/tY9Ul7kGkf1S0CWuKcCD38l8YkeH8z8QjE0GmW1gYU5S9FOnJ0"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://kit.fontawesome.com/ddc3ee268a.js"
+      crossorigin="anonymous"
+    ></script>
   </head>
   <body>
-    <header class="hero text-center">
-      <p>👋 Hello, I am</p>
+    <div class="container">
+      <nav class="d-flex justify-content-between">
+        <a href="/" title="Homepage">
+          <img
+            src="styles/logo-shecodes.png"
+            class="logo d-none d-md-block"
+            alt="Bruna Borelli Logo"
+          />
+          <img
+            src="styles/logo-shecodes.png"
+            class="logo d-block d-md-none"
+            alt="Bruna Borelli Logo"
+          />
+        </a>
+        <ul>
+          <li class="active">
+            <a href="/" title="Homepage"> Home</a>
+          </li>
+          <li>
+            <a href="/about.html" title="About Bruna"> About</a>
+          </li>
+          <li>
+            <a href="/work.html" title="Bruna's work"> Work</a>
+          </li>
+          <li>
+            <a href="/contact.html" title="Contact Bruna"> Contact</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+    <div class="hero">
+      <p>👋 Hello, I'm</p>
       <h1>Bruna Borelli</h1>
-      <h2 class="mb-4">🇧🇷🇵🇹 Front-end Developer based in Europe</h2>
-      <a href="about.html" class="btn btn-branding">About me</a>
-    </header>
-
-    <section class="container text-center my-5">
-      <h2 class="mb-4">A selection of my best projects</h2>
-    </section>
-
-    <section class="container">
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center text-lg-start">
-          <h2>Weather App</h2>
-          <p class="text-muted">
-            A real-time weather app that provides accurate forecasts using API
-            integration, featuring a sleek and user-friendly design.
-          </p>
-          <a
-            href="https://borellis-doing-weather.netlify.app/"
-            class="btn btn-branding-outline mb-3"
-            target="_blank"
-            >Visit project</a
-          >
-        </div>
-        <div class="col-lg-6 text-center">
+      <h2 class="mb-5">Front-end Developer based in Europe</h2>
+      <div>
+        <a href="/contact.html" class="btn btn-branding" title="Contact me"
+          >Contact me</a
+        >
+      </div>
+    </div>
+    <p class="text-center m-5">Check out some of my featured projects below</p>
+    <div class="container">
+      <div class="row mb-5">
+        <div class="col d-none d-lg-block">
           <img
             src="styles/weather-app.png"
-            class="img-fluid project-img"
-            alt="Screenshot of Weather App project"
+            class="img-fluid"
+            alt="Weather App project preview"
           />
+        </div>
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Weather App</h2>
+            <p class="mb-5 text-muted">
+              A real-time weather app providing accurate forecasts using API
+              integration and a sleek, user-friendly design.
+            </p>
+            <a
+              href="https://borellis-doing-weather.netlify.app/"
+              class="btn btn-branding-outline"
+              target="_blank"
+              >Visit project</a
+            >
+          </div>
         </div>
       </div>
 
-      <div class="row align-items-center mb-5 flex-lg-row-reverse">
-        <div class="col-lg-6 text-center text-lg-start">
-          <h2>World Clock</h2>
-          <p class="text-muted">
-            A global timekeeping app that allows users to check the current time
-            in my favorite cities worldwide with an intuitive interface.
-          </p>
-          <a
-            href="https://borellis-timing-the-world.netlify.app/"
-            class="btn btn-branding-outline mb-3"
-            target="_blank"
-            >Visit project</a
-          >
-        </div>
-        <div class="col-lg-6 text-center">
-          <img
-            src="styles/world-clock.png"
-            class="img-fluid project-img"
-            alt="Screenshot of World Clock project"
-          />
-        </div>
-      </div>
-
-      <div class="row align-items-center mb-5">
-        <div class="col-lg-6 text-center text-lg-start">
-          <h2>Critics at Large</h2>
-          <p class="text-muted">
-            An homage to my favorite podcast, "Critics at Large".
-          </p>
-          <a
-            href="https://critics-at-large.netlify.app/"
-            class="btn btn-branding-outline mb-3"
-            target="_blank"
-            >Visit project</a
-          >
-        </div>
-        <div class="col-lg-6 text-center">
+      <div class="row mb-5">
+        <div class="col d-none d-lg-block">
           <img
             src="styles/podcast.png"
-            class="img-fluid project-img"
-            alt="Screenshot of Critics at Large project"
+            class="img-fluid"
+            alt="Critics at Large project preview"
           />
+        </div>
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Critics at Large</h2>
+            <p class="mb-5 text-muted">
+              An homage to my favorite podcast, showcasing creative design and
+              thoughtful layout.
+            </p>
+            <a
+              href="https://critics-at-large.netlify.app/"
+              class="btn btn-branding-outline"
+              target="_blank"
+              >Visit project</a
+            >
+          </div>
         </div>
       </div>
 
-      <div class="row align-items-center mb-5 flex-lg-row-reverse">
-        <div class="col-lg-6 text-center text-lg-start">
-          <h2>Cringe Cupid</h2>
-          <p class="text-muted">
-            A fun app with an AI concept that showcases cheesy icebreakers to
-            use in the dating world.
-          </p>
-          <a
-            href="https://cringe-cupid.netlify.app/"
-            class="btn btn-branding-outline mb-3"
-            target="_blank"
-            >Visit project</a
-          >
-        </div>
-        <div class="col-lg-6 text-center">
+      <div class="row mb-5 flex-lg-row-reverse">
+        <div class="col d-none d-lg-block">
           <img
             src="styles/cringe-cupaid.png"
-            class="img-fluid project-img"
-            alt="Screenshot of Cringe Cupid project"
+            class="img-fluid"
+            alt="Cringe Cupid project preview"
           />
         </div>
+        <div class="col">
+          <div class="project-desciption">
+            <h2 class="mb-5">Cringe Cupid</h2>
+            <p class="mb-5 text-muted">
+              A fun app with an AI twist, offering cheesy icebreakers for the
+              dating world.
+            </p>
+            <a
+              href="https://cringe-cupid.netlify.app/"
+              class="btn btn-branding-outline"
+              target="_blank"
+              >Visit project</a
+            >
+          </div>
+        </div>
       </div>
-    </section>
-
-    <footer class="text-center py-4 mt-5">
-      <p>&copy; 2025 Bruna Borelli | Front-end Developer</p>
-    </footer>
+      <footer>
+        <div class="contact-box justify-content-between mb-5 d-none d-md-flex">
+          <div>
+            <h3>Work Inquiry</h3>
+            <p class="text-muted">Let's work together</p>
+          </div>
+          <div>
+            <a
+              href="/contact.html"
+              class="btn btn-branding mt-3"
+              title="Contact Bruna"
+              >Contact me</a
+            >
+          </div>
+        </div>
+        <div class="d-flex justify-content-center mb-5">
+          <a
+            href="mailto:borelli.bruna@gmail.com"
+            class="email-link"
+            title="Email Bruna"
+            >borelli.bruna@gmail.com</a
+          >
+        </div>
+        <div class="social-links d-flex justify-content-center">
+          <a
+            href="https://www.linkedin.com/in/borelli-bruna/"
+            target="_blank"
+            title="LinkedIn Profile"
+          >
+            <i class="fab fa-linkedin"></i>
+          </a>
+          <a
+            href="https://www.instagram.com/bborelli/"
+            target="_blank"
+            title="Instagram Profile"
+          >
+            <i class="fab fa-instagram"></i>
+          </a>
+          <a
+            href="https://github.com/bborelli"
+            target="_blank"
+            title="GitHub Profile"
+          >
+            <i class="fab fa-github"></i>
+          </a>
+        </div>
+        <p class="text-center mt-5">
+          &copy; 2025 Bruna Borelli | Front-end Developer
+        </p>
+      </footer>
+    </div>
   </body>
 </html>
